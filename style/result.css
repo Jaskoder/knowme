@@ -1,0 +1,81 @@
+.result {
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.green {
+    --primary: hsl(140, 50%, 50%);
+    --message-color: var(--primary);
+    --background: hsl(140, 100%, 90%);
+}
+
+.red {
+    --message-color: var(--text-dark);
+    --primary: hsl(0, 50%, 50%);
+    --background: hsl(0, 100%, 90%);
+}
+
+.yellow {
+    --primary: hsl(61, 50%, 50%);
+    --message-color: hsl(140, 50%, 50%);
+    --background: hsl(61, 100%, 90%);
+}
+
+.result .score-box {
+    width: 380px;
+    min-height: 420px;
+    padding: 2rem;
+    background-color: var(--bg-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-lg);
+}
+
+.score-box .message {
+    color: var(--message-color);
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.score {
+    width: 120px;
+    height: 120px;
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--primary);
+    border-radius: 1rem;
+    gap: .6rem;
+}
+
+.score .percent {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.score-box .tip {
+    color: var(--text-dark);
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.tip span {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.share-buttons {
+
+    display: flex;
+    flex-direction: column;
+}

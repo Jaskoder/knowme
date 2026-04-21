@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KnowMe - Créer des questions</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <main class="container sender-container">
+        <aside class="create-panel">
+            <div class="create-card">
+                <h2 class="panel-title">Créer votre questionnaire</h2>
+                
+                <div class="form-group">
+                    <label for="senderName">Votre nom</label>
+                    <input type="text" id="senderName" placeholder="Entrez votre nom" class="form-input">
+                </div>
+
+                <div class="form-group">
+                    <label for="question">Nouvelle question</label>
+                    <input type="text" id="question" placeholder="Ex: J'adore les pizzas ?" class="form-input">
+                </div>
+
+                <div class="form-group">
+                    <span class="answer-label">Quelle est la réponse ?</span>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="answer" value="true"> Vrai
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="answer" value="false"> Faux
+                        </label>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary btn-full" id="savebtn">Enregistrer la question</button>
+            </div>
+        </aside>
+
+        <section class="questions-panel">
+            <div class="questions-header">
+                <h2>Mes questions</h2>
+                <span class="question-count" id="questionCount">0 question</span>
+            </div>
+
+            <div class="questions-list" id="questionsList">
+                <div class="empty-state">
+                    <p>📝 Aucune question pour le moment</p>
+                    <p class="empty-hint">Ajoutez votre première question à gauche</p>
+                </div>
+            </div>
+
+            <div class="actions-footer">
+                <button class="btn btn-secondary" id="resetBtn">Réinitialiser</button>
+                <button class="btn btn-primary" id="sendBtn" disabled>Partager le questionnaire</button>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="./script/sender.js"></script>
+</body>
+
+</html>

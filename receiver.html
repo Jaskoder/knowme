@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/receiver.css">
+    <title>KnowMe - Répondre au questionnaire</title>
+</head>
+
+<body>
+    <main class="receiver">
+        <div id="namePrompt" class="name-prompt">
+            <div class="prompt-card">
+                <h2>Entrez votre nom</h2>
+                <input type="text" id="receiverNameInput" placeholder="Votre nom" class="form-input">
+                <button id="confirmNameBtn" class="btn btn-primary">Commencer</button>
+            </div>
+        </div>
+        
+        <div id="quizContent" style="display: none;">
+            <h2>Répondez aux questions de <br><span id="senderNameDisplay" class="name"></span></h2>
+
+            <div class="question-box">
+                <p class="question" id="questionText"></p>
+                <div class="radio-group" id="radioGroup">
+                    <label class="radio-option">
+                        <input type="radio" name="answer" value="true"> Vrai
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="answer" value="false"> Faux
+                    </label>
+                </div>
+                <button class="btn btn-large btn-primary" id="nextbtn">Suivant</button>
+                <div id="progress" class="progress"></div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="./script/receiver.js"></script>
+</body>
+
+</html>

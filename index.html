@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KnowMe - Accueil</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <main class="container">
+        <div class="hero">
+            <h1 class="hero-title">
+                Bienvenue sur <span class="logo">KnowMe</span>
+            </h1>
+            <p class="hero-subtitle">Amusez-vous en envoyant des questions sur vous à vos amis</p>
+            <button id="startBtn" class="btn btn-primary btn-large">Commencer</button>
+        </div>
+    </main>
+    <script type="module">
+        import { prompt } from "./script/core.js";
+
+        const startBtn = document.getElementById("startBtn");
+
+        startBtn.addEventListener("click", () => {
+            prompt((name) => {
+                localStorage.setItem("senderName", name);
+                window.location.href = "./sender.html";
+            });
+        });
+    </script>
+</body>
+
+</html>

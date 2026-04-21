@@ -1,0 +1,79 @@
+.receiver {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 2rem;
+}
+
+.name {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.receiver h2 {
+    text-align: center;
+    color: var(--text-dark);
+    font-size: 1.2rem;
+}
+
+.receiver .question-box {
+    width: 360px;
+    min-height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: var(--bg-white);
+    box-shadow: var(--shadow-lg);
+    border-radius: var(--radius);
+}
+
+.question-box p.question {
+    color: var(--text-dark);
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.name-prompt {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.prompt-card {
+    background: var(--bg-white);
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+    text-align: center;
+    width: 320px;
+}
+
+.prompt-card h2 {
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.prompt-card input {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.progress {
+    font-size: 0.9rem;
+    color: var(--text-gray);
+    margin-top: 0.5rem;
+}
